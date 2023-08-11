@@ -1,0 +1,30 @@
+import React from 'react'
+import Header from '../Header/Header'
+import develop from '../Header/img/develop.webp'
+
+export const About = () => {
+  return (
+    <div> 
+      <Header/>
+        <div className='txt-about'>
+        <h1>ABOUT ME</h1> <br />
+      <p>
+      🔭 I am currently studying at the Sena Galan of Armenia Quindio <br />
+
+🌱 I am currently learning javascript,Css,NodeJs,typeScript for web application development <br />
+
+🤝 I am available to work as a Frontend. <br />
+
+💬 Ask me about Html, Css and Javascript <br />
+
+📫 How to contact me torresgarciajuandavid7@gmail.com <br />
+
+📄 about me: I am 20 years old and I am from Colombia</p>
+        </div>
+        <div className='container-image'>
+            <img src={develop} className="image" />
+        </div>
+    </div>
+  )
+  
+}
