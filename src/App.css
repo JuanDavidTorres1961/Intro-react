@@ -67,3 +67,29 @@
   width: 100%;
 }
 
+/* About */
+
+.container-about{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.txt-about{
+  font-size: 16px;
+}
+
+.txt-about .h1{
+  color: rgb(0, 193, 252);
+}
+
+.container-image{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.container-proyects h1{
+  color: rgb(0, 193, 252);
+}

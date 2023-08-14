@@ -1,13 +1,16 @@
 import React from 'react'
 import Header from '../Header/Header'
 import develop from '../Header/img/develop.webp'
+import {  } from "../../App.css";
+import Proyects from '../../components/Proyects/Proyects'
 
 export const About = () => {
   return (
-    <div> 
+    <div > 
       <Header/>
-        <div className='txt-about'>
-        <h1>ABOUT ME</h1> <br />
+      <div className='container-about'>
+      <div className='txt-about'>
+        <h1 className='h1'>ABOUT ME</h1> <br />
       <p>
       🔭 I am currently studying at the Sena Galan of Armenia Quindio <br />
 
@@ -24,6 +27,8 @@ export const About = () => {
         <div className='container-image'>
             <img src={develop} className="image" />
         </div>
+      </div>
+      <Proyects/>
     </div>
   )
   
