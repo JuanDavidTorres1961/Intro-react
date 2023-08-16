@@ -12,8 +12,6 @@ const SectionFirst = () => {
 
         <div className='container-description'>
         <p className='text-description'> Hi 👋, I'm Juan David Torres</p>
-
-
       </div>
     </div>
     

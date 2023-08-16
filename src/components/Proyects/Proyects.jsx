@@ -1,9 +1,9 @@
 import React from 'react'
+import {  } from "../../App.css";
 
-
-export const Proyects = () =>{
-    return(
-        <>
+export const Proyects = () => {
+  return (
+    <>
         <div  className='container-proyects'>
           <h1>My Projects</h1>
           <div className='cards-container'>
@@ -22,5 +22,7 @@ export const Proyects = () =>{
           </div>
         </div>
         </>
-    )
+  )
 }
+
+export default Proyects;

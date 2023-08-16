@@ -1,8 +1,9 @@
 import React from 'react'
+import Proyects from '../Proyects/Proyects'
 import Header from '../Header/Header'
 import develop from '../Header/img/develop.webp'
 import {  } from "../../App.css";
-import Proyects from '../../components/Proyects/Proyects'
+
 
 export const About = () => {
   return (
@@ -33,3 +34,5 @@ export const About = () => {
   )
   
 }
+
+export default About;
