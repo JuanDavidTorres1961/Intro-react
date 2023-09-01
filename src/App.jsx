@@ -3,6 +3,7 @@ import Home from "./components/pages/Home/Home"
 import { NotFound } from "./components/NotFound/NotFound"
 import { About } from "./components/About/About"
 import { Contact } from "./components/Contact/Contact"
+import {Store} from "./components/Store/Store"
 
 // import './App.css'
 
