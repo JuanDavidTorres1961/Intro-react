@@ -1,0 +1,18 @@
+
+
+.container-Options{
+    display: flex;
+    gap: 20px;
+}
+
+.container-Options a{
+    text-decoration: none;
+    color: rgba(86,210,98,255);
+}
+
+.image-cart{
+    object-fit: cover;
+    height: 40px;
+    height: 25px;
+    filter: invert(100%);
+}

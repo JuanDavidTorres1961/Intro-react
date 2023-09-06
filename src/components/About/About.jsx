@@ -2,12 +2,12 @@ import React from 'react'
 import Proyects from '../Proyects/Proyects'
 import Header from '../Header/Header'
 import develop from '../Header/img/develop.webp'
-import {  } from "../../App.css";
+import {  } from "../About/Css/About.css";
 
 
 export const About = () => {
   return (
-    <div > 
+    <div className='bodyAbout'> 
       <Header/>
       <div className='container-about'>
       <div className='txt-about'>

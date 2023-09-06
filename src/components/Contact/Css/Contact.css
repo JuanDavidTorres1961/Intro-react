@@ -1,0 +1,21 @@
+.body-Contact{
+    color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+	height: 100vh;
+}
+
+.containerIconos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 300px;
+    gap: 320px;
+}
+
+.image-icono{
+    object-fit: cover;
+    height: 100px;
+    height: 100px;
+    filter: invert(100%);
+}
