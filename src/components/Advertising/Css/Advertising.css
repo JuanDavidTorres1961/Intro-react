@@ -1,33 +1,49 @@
+.advertising-container {
+  width: 100%;
+  height: 66vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000000;
+}
+
+
 .publicidad {
-    display: flex;
-    overflow-x: scroll;
-    width: 100%;
-    white-space: nowrap;
-  }
-  
-  .container-imagen {
-    flex: 0 0 100%;
-    margin-right: 10px;
-    position: relative;
-  }
-  
-  .imagen {
-    width: 100%;
-    height: 70vh;
-    object-fit: fill;
-  }
-  
-  .titulo {
-    position: absolute;
-    top: 50%; 
-    left: 50%; 
-    transform: translate(-50%, -50%); 
-    z-index: 1; 
-    padding: 10px;
-    color: #fff;
-    font-size: 70px;
-    border: 3px solid #000;
-  }
-  
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.imagen {
+  width: 177vh;
+  height: 60vh;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
+
   

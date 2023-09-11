@@ -7,7 +7,7 @@ export const HeaderStore = () => {
   return (
     <div className='Container-H'>
         <div className="logo">
-            <img src={LOGO} className='image-store'/>
+            <a href="#"><img src={LOGO} className='image-store'/></a> 
         </div>
        <NavBarStore/>
     </div>
