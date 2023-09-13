@@ -9,7 +9,6 @@
   background-color: #000000;
 }
 
-
 .publicidad {
   display: flex;
   justify-content: center;
@@ -21,11 +20,13 @@
   position: relative;
   display: flex;
   align-items: center;
+  transition: transform 0.5s ease; 
 }
 
 .imagen {
   width: 177vh;
   height: 60vh;
+  transition: opacity 0.5s ease; 
 }
 
 .arrow {

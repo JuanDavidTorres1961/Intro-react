@@ -10,13 +10,13 @@ export const Proyects = () => {
         <div  className='container-proyects'>
           <h1 className='titleProjects'>My Projects</h1>
           <div className='cards-container'>
-              <div className="card">
+              <div className="cards">
                   <a href="https://papaya-babka-00d321.netlify.app"><img src={SMS} className='image-Projects' /></a>
               </div>
-              <div className="card">
+              <div className="cards">
                   <a href="https://blueasytorres.netlify.app"><img src={blueAsy} className='image-Projects' /></a>
               </div>
-              <div className="card">
+              <div className="cards">
                   <a href="https://bucolic-hummingbird-49733e.netlify.app"><img src={Bleux} className='image-Projects' /></a>
               </div>
           </div>

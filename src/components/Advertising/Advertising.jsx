@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Advertising/Css/Advertising.css';
 import logoGorra from '../Advertising/img/logoGorra.jpg';
 import promos from '../Advertising/img/promos.jpg';
@@ -15,6 +15,14 @@ export const Advertising = () => {
   const prevImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
+
+  useEffect(() => {
+    const interval = setInterval(nextImage, 2000); 
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <div className="advertising-container">

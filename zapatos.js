@@ -1,7 +1,10 @@
- export const zapatosData = {
-  zapatos: [
-    {
-      id: 1,
+const express = require('express');
+const app = express();
+const port = 3000;
+
+const zapatosData = {
+  zapatos: [{
+    id: 1,
       nombre: 'Nike For One In Boot',
       descripcion: 'They are very comfortable and also have a lot of urban style.',
       precio: 59.99,
@@ -58,4 +61,28 @@
     },
   ],
 };
+
+// Ruta para obtener todos los zapatos
+app.get('/api/zapatos', (req, res) => {
+  res.json(zapatosData);
+});
+
+// Ruta para obtener un zapato por ID
+app.get('/api/zapatos/:id', (req, res) => {
+  const id = parseInt(req.params.id);
+  const zapato = zapatosData.zapatos.find((item) => item.id === id);
+
+  if (!zapato) {
+    res.status(404).json({ error: 'Zapato no encontrado' });
+  } else {
+    res.json(zapato);
+  }
+});
+
+app.listen(port, () => {
+  console.log(`Servidor en funcionamiento en el puerto ${port}`);
+});
+
+
+
 
