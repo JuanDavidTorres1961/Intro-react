@@ -24,9 +24,7 @@ export const NavBarStore = () => {
           <a><NavLink className='nav-element' to="/Tshirts">Tshirts</NavLink></a>
           <a><NavLink className='nav-element' to="/Caps">Caps</NavLink></a>
           <a><NavLink className='nav-element' to="/Promos">Promos</NavLink></a>
-          <div className="carrito">
-            <img src={shopping} className='image-cart' /><p>{Increment}</p>
-          </div>
+            
         </div>
     </div>
     </>

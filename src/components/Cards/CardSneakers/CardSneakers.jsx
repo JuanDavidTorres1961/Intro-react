@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import '../CardSneakers/Css/CardSneakers.css';
 
-export const CardSneakers = ({Increment}) => {
+export const CardSneakers = ({ onAddToCart }) => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -10,10 +10,9 @@ export const CardSneakers = ({Increment}) => {
       .then((data) => setProducts(data));
   }, []);
 
-
   return (
     <div className="bodySneakers">
-      <div className="containerSneakers">   
+      <div className="containerSneakers">
         {products.map((product) => (
           <div className="custom-card" key={product.id}>
             <img
@@ -24,7 +23,7 @@ export const CardSneakers = ({Increment}) => {
             <div className="custom-card-body">
               <h5 className="custom-card-title">{product.title}</h5>
               <p className="custom-card-text1">${product.price}</p>
-              <button onClick={Increment}>Add to Cart</button>
+              <button onClick={() => onAddToCart()}>Add to Cart</button>
             </div>
           </div>
         ))}
@@ -32,4 +31,5 @@ export const CardSneakers = ({Increment}) => {
     </div>
   );
 };
+
 
